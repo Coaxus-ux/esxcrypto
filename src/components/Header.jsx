@@ -1,4 +1,4 @@
-import React, { Fragment, useEffect } from "react";
+import { Fragment, useEffect } from "react";
 import Logo from "../img/logo.svg";
 
 const Header = ({setToHref}) => {
@@ -40,7 +40,7 @@ const Header = ({setToHref}) => {
         });
       }
     }
-  });
+  },[]);
   
   return (
     <Fragment>
@@ -148,7 +148,7 @@ const Header = ({setToHref}) => {
           </li>
         </ul>
         <a
-          className="hidden lg:inline-block lg:ml-auto lg:mr-3 py-2 px-6 bg-gray-50 hover:bg-gray-100 text-sm text-gray-900 font-bold  rounded-xl transition duration-200"
+          className=" hidden lg:inline-block lg:ml-auto lg:mr-3 py-2 px-6 bg-gray-50 hover:bg-gray-100 text-sm text-gray-900 font-bold  rounded-xl transition duration-200"
           href="/#"
         >
           Sign In
