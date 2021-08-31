@@ -1,6 +1,7 @@
 import { Fragment, useEffect } from "react";
 import Logo from "../img/logo.svg";
 
+
 const Header = ({setToHref}) => {
   
   useEffect(() => {
@@ -60,7 +61,7 @@ const Header = ({setToHref}) => {
             </svg>
           </button>
         </div>
-        <ul className="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-6">
+        <ul className="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-6">
           <li>
             <a
               className="font-bold text-base text-white hover:text-green-400"
@@ -93,7 +94,7 @@ const Header = ({setToHref}) => {
               href="/#"
             >
 
-              Mining
+              Sale
             </a>
           </li>
           <li className="text-gray-300">
@@ -201,7 +202,7 @@ const Header = ({setToHref}) => {
                   onClick={e => setToHref(2)}
                   href="/#"
                 >
-                  Mining
+                  Sale
                 </a>
               </li>
               <li className="mb-1">
